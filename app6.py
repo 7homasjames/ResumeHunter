@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 import pdfplumber
 
-API_BASE = "http://127.0.0.1:8000"
+API_BASE = "https://resumehunter.onrender.com"
 
 # ---------- API Helpers ----------
 def ats_check(resume_text, job_description):
@@ -32,7 +32,7 @@ def extract_text_from_pdf(file):
 
 # ---------- UI Setup ----------
 st.set_page_config(page_title="ATS Resume Checker", page_icon="🤖")
-st.title("📄 Resume ATS Compatibility Checker")
+st.title("📄 Resume Hunter")
 
 # Sidebar
 st.sidebar.title("⚙️ Settings")
